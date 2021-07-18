@@ -59,6 +59,7 @@ You will be running your tests in one terminal and debugging in the other. As yo
 Edit the `ReadMe` file with your answers to the questions below.
 
 1. In your own words, define closure (1-2 sentences).
+- a closure gives you access to an outer function;s scope from an inner function.
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -80,8 +81,13 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+- name is the closure becasue it is at the outer function scope.
+
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+- name will remain the same, newRoll would change.
+
 c. What is the lexical scope of `newRoll`? 
+- 
 
 
 ### Task 3 - Stretch Goals
@@ -99,6 +105,12 @@ addSix(21); // returns 27
 ```
 
 2. Research the differences between functional programming and object oriented programming. Then, describe the pros and cons of functional programming vs object-oriented programming. This is a common interview question and great practice!
+
+- both of them uses a diffenrent method for storing and manipulating the data.
+
+- In functional programming, data cannot be stored in objects and it can only be transformed by creating functions. It's good when you have a fixed set of things, and as your code evolves, you primarily add new operations on existing things. It requires always a new object to execute functions and takes a lot of mempry for executing the applications. 
+
+- In object-oriented programming, data is stored in objects. It's good when you have a fixed set of operations on things, and as your code evolves, you promarily add new things. It's hard to maintain objects while increasing the levels of inheritence. It also breaks the principle of encapsulation and not fully modular.
 
 ## Resources
 
