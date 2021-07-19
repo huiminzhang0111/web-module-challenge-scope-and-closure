@@ -59,7 +59,7 @@ You will be running your tests in one terminal and debugging in the other. As yo
 Edit the `ReadMe` file with your answers to the questions below.
 
 1. In your own words, define closure (1-2 sentences).
-- a closure gives you access to an outer function;s scope from an inner function.
+- a closure gives you access to an outer function's scope from an inner function.
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -87,7 +87,7 @@ b. Compare and contrast calling `dansRoll` the first and second time. What is al
 - name will remain the same, newRoll would change.
 
 c. What is the lexical scope of `newRoll`? 
-- 
+- personalDice funciton scope
 
 
 ### Task 3 - Stretch Goals
@@ -99,10 +99,17 @@ See if you can complete one or more of the following challenges:
 1. Write a function that would allow you to do this using a closure. (This is another interview question we've seen before - when you're ready for answers, view an explanation [here](https://www.coderbyte.com/algorithm/3-common-javascript-closure-questions)).
 
 ```js
+function createBase(baseNumber){
+  function f2(n){
+    return baseNumber + n;
+  }
+  return f2;
+}
 var addSix = createBase(6);
 addSix(10); // returns 16
 addSix(21); // returns 27
 ```
+
 
 2. Research the differences between functional programming and object oriented programming. Then, describe the pros and cons of functional programming vs object-oriented programming. This is a common interview question and great practice!
 
